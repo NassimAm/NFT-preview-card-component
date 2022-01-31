@@ -5,22 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
   
   <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-
-  
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Ameur Nassim</a>.
+<body id="main">
+  <div class="component">
+    <div class="component-content">
+      <div class="product-img-container">
+        <img class ="product-img" src="./images/image-equilibrium.jpg" alt="Equilibrium">
+        <img id="view-icon" src="./images/icon-view.svg" alt="">
+      </div>
+      <a href="" class="product-title">Equilibrium #3429</a>
+      <p class="product-description">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="more-info">
+        <div class="product-price">
+          <img src="./images/icon-ethereum.svg" alt="Price">
+          <p>
+            0.041 ETH
+          </p>
+        </div>
+        <div class="product-time">
+          <img src="./images/icon-clock.svg" alt="Time">
+          <p>
+            3 days left
+          </p>
+        </div>
+      </div>
+      <div class="separator"></div>
+      <div class="creator-container">
+        <img src="./images/PDP.jpg" alt="Avatar">
+        <p>
+          Creation of <a href="">Ameur Nassim</a>
+        </p>
+      </div>
+    </div>
   </div>
 </body>
+<script>
+  let mybody = document.getElementById("main")
+  window.onload = function(){
+    mybody.style.height = window.innerHeight + 'px';
+  }
+  window.onresize = function() {
+    mybody.style.height = window.innerHeight + 'px';
+    mybody.style.justifyContent = 'center';
+    mybody.style.alignItems = 'center';
+  };
+</script>
 </html>

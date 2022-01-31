@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Outfit');
+
+body{
+    background-color: #0c1c2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding:0;
+}
+
+/*Main NFT Component Style ==========================================================*/
+.component{
+    width:300px;
+    height:500px;
+    background-color: #15273f;
+    border-radius: 15px;
+    box-shadow: #0c1729 10px 25px 5px 10px, #0c1729 -10px 25px 5px 10px, #0c192c 30px 40px 5px 10px,#0c192c -30px 40px 5px 10px,#0c192c -30px -20px 5px 10px,#0c192c 30px -20px 5px 10px;
+}
+
+/*NFT Component Content Style =====================================================*/
+.component-content{
+    margin: 0 20px;
+    height:500px;
+}
+
+.product-img-container{
+    margin-top: 20px;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 7px;
+}
+
+.product-img{
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+}
+
+#view-icon{
+    position: absolute;
+    visibility: hidden;
+}
+
+.product-img-container:hover
+{
+    cursor: pointer;
+}
+
+.product-img-container:hover .product-img{
+    opacity: 0.7;
+}
+
+.product-img-container:hover #view-icon{
+    visibility: visible;
+}
+
+/*Product Title & Description ================================================================*/
+.product-title{
+    display: block;
+    margin-top:15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family:'Outfit','sans-serif';
+    letter-spacing: 1px;
+}
+
+.product-title:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+.product-description{
+    color:hsl(215, 51%, 70%);
+    font-size: 16px;
+    font-family: 'Outfit','sans-serif';
+}
+
+/*Price & Time ===================================================================================*/
+.more-info{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-price{
+    display: flex;
+    align-items: center;
+}
+
+.product-price img{
+    margin:0;
+    margin-right: 7px;
+    height: 18px;
+    width: auto;
+}
+
+.product-time{
+    display: flex;
+    align-items: center;
+}
+
+.product-time img{
+    margin:0;
+    margin-right: 5px;
+    height: 18px;
+    width: auto;
+}
+
+
+.product-price p{
+    margin:0;
+    color: hsl(178, 100%, 50%);
+    font-size: 18;
+    font-weight: 500;
+    font-family: 'Outfit','sans-serif';
+}
+
+.product-time p{
+    margin:0;
+    color:hsl(215, 51%, 70%);
+    font-size: 18;
+    font-weight: 400;
+    font-family: 'Outfit','sans-serif';
+}
+
+.separator{
+    background-color: #293b53;
+    width: 100%;
+    height:2px;
+    margin-bottom: 3px;
+}
+
+/*Creator Information ===============================================================*/
+.creator-container{
+    display: flex;
+    align-items: center;
+}
+
+.creator-container img{
+    margin:0;
+    height: 30px;
+    width: auto;
+    border: white 2px solid;
+    border-radius: 90px;
+    margin-right:15px;
+}
+
+.creator-container p{
+    color:hsl(215, 51%, 70%);
+    font-size: 18;
+    font-weight: 300;
+    font-family: 'Outfit','sans-serif';
+}
+
+.creator-container a{
+    text-decoration: none;
+    color: white;
+}
+
+.creator-container a:hover{
+    color: hsl(178, 100%, 50%);
+}
